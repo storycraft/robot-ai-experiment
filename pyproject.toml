@@ -6,6 +6,7 @@ dependencies = [
     "lerobot",
     "lerobot[dataset]",
     "lerobot[feetech]",
+    "lerobot[diffusion]",
     "torch>=2.11.0",
     "torchvision>=0.26.0",
     "matplotlib>=3.11.2",

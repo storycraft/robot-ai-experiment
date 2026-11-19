@@ -4626,7 +4626,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "ipykernel" },
-    { name = "lerobot", extra = ["dataset", "feetech"] },
+    { name = "lerobot", extra = ["dataset", "diffusion", "feetech"] },
     { name = "matplotlib" },
     { name = "torch", version = "2.11.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
     { name = "torch", version = "2.11.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
@@ -4639,6 +4639,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=6.31.0" },
     { name = "lerobot", editable = "lerobot" },
     { name = "lerobot", extras = ["dataset"], editable = "lerobot" },
+    { name = "lerobot", extras = ["diffusion"], editable = "lerobot" },
     { name = "lerobot", extras = ["feetech"], editable = "lerobot" },
     { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "torch", marker = "sys_platform != 'linux' and sys_platform != 'win32'", specifier = ">=2.11.0" },
